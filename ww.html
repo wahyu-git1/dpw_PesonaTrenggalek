@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoom In dan Zoom Out Gambar</title>
+  <style>
+    #gambar {
+      width: 300px; /* Atur ukuran gambar sesuai kebutuhan */
+      transition: transform 0.3s ease; /* Transisi animasi saat zoom in/out */
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <img id="gambar" src="peta.png" alt="Gambar">
+  
+  <script>
+  var zoomLevel = 1; // Level zoom awal
+var zoomIncrement = 0.1; // Increment zoom
+
+document.getElementById('gambar').addEventListener('click', function() {
+  zoomIn();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code === 'KeyZ' && e.ctrlKey) { // Tombol Ctrl + Z
+    zoomOut();
+  }
+});
+
+function zoomIn() {
+  var gambar = document.getElementById('gambar');
+  zoomLevel += zoomIncrement;
+  gambar.style.transform = 'scale(' + zoomLevel + ')';
+}
+
+function zoomOut() {
+  var gambar = document.getElementById('gambar');
+  zoomLevel -= zoomIncrement;
+  gambar.style.transform = 'scale(' + zoomLevel + ')';
+}
+
+  
+  </script>
+</body>
+</html>

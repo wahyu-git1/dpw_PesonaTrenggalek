@@ -1,0 +1,53 @@
+<--JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+	
+	
+	
+	
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+<h2>Integer Precision</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 999999999999999;
+let y = 9999999999999999;	
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+let x = 9999999999999999;
+let y = BigInt("9999999999999999");
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+let x = 123456789012345678901234567890n;
+let y = BigInt("123456789012345678901234567890");
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+let x = 9007199254740995n;
+let y = 9007199254740995n;
+let z = x * y;
+document.getElementById("demo").innerHTML = z; 
+
+let x = 5n;
+let y = Number(x) / 2;
+document.getElementById("demo").innerHTML = y;
+
+let hex = 0x20000000000003n;
+let oct = 0o400000000000000003n;
+let bin = 0b100000000000000000000000000000000000000000000000000011n;
+
+document.getElementById("demo").innerHTML = hex + "<br>" + oct + "<br>" + bin; 
+
+let x = 9007199254740992 === 9007199254740993;
+document.getElementById("demo").innerHTML = x;
+
+
+</script>
+
+</body>
+</html>
+

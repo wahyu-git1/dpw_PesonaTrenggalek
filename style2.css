@@ -1,0 +1,492 @@
+    .wrap{
+	
+	
+	width:100%;
+	padding: 0px 0px 0px 0px;
+    /* min-height: 100%; */
+}
+ 
+
+.wrap .header{
+	background: rgb(243, 247, 243);
+	/*height: 50px;*/
+	width:100%;
+	padding: 2px 10px;
+    
+}
+
+/* ================ */
+
+
+/*akhir header*/
+ 
+/*bagian menu*/
+.wrap .menu{
+	width:100%;
+	display: flex;
+	background: yellow;
+	justify-content: space-around;
+	padding: 10px 0;
+    
+
+}
+ 
+.wrap .menu ul{
+	display: flex;
+	list-style: none;
+	width:40%
+	justify-content: space-beetwen;
+
+
+}
+ 
+.wrap .menu ul li{
+    
+	float: left;
+	list-style-type: none;
+    padding:1%;
+	/* padding: 20px; */
+    margin-right: 2%; 
+}
+
+.icon{
+	display: none;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.wrap .menu a {
+    text-align: center;
+    font-size: 100%;
+    font-weight: 50%;
+    text-decoration: none;
+    color:white:
+}
+
+.wrap .menu a:hover{
+    background: #de6581;
+    color: #fff;display: block;
+
+}
+
+
+
+/* ===================== content ===== */
+figure {	
+width:100%;
+height: 800px;
+padding:5px;
+margin:10px;
+border:5px solid #eeeeee;
+background-color:RGB(243, 354, 243)
+}
+
+figure img{ 
+width:100%;
+height:800px
+
+
+}
+
+
+/*================================================*/
+.badan{
+        max-width: 100%;
+        position: relative;
+        margin:auto;
+
+}
+
+/* Caption text */
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 30px;
+  padding: 100px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.text1 {
+  color: yellow;
+  font-size: 20px;
+  padding: 100px 12px ;		/* : */
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/*========================== about*/
+.about{
+	width:50%;
+	position:absolute;
+	bottom:50px;
+}
+
+.text1-about{
+
+text-align:center;
+color:red;
+font-size:40px;
+padding-bottom:70px;
+bottom:50px;
+
+}
+
+.text-about {
+	text-align:center;
+	color:white;
+	font-size: 20px;
+	padding-bottom:40px;
+}
+
+.text-detail{
+	font-size:30px;
+    position: absolute;
+    width: 10%;
+    height: 40px;
+    background-color:orangered;
+    left: 45.2%
+
+}
+
+/*==================== count down start=======*/
+	
+.countdown1{
+	text-align: center;
+   background:rgb(243, 247, 243);
+  font-family: sans-serif;
+  font-weight: 100;
+  float: left;
+	width:40%;
+	height:300px;
+  position:relative;
+  margin-left:40px;
+
+}
+.countdown1 img{
+	margin:5px;
+	height:150px;
+	margin-bottom:20px;
+}
+
+
+.countdown2{
+	text-align: center;
+    background: rgb(243, 247, 243);
+  font-family: sans-serif;
+  font-weight: 100;
+  float: right;
+	width:50%;
+  position:relative;
+  margin:auto;
+}
+
+.countdown2 img{
+	margin:5px;
+	height:150px;
+	margin-bottom:20px;
+}
+h1{
+text-align:center;
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 200px;					/* digunakan untuk lebar nya : atas- kanan- bawah- kiri  */   
+
+}
+ #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+/*=============  map contact =======*/
+
+.maps{
+	margin-top:200px;
+  float: left;
+	width:30%;
+	height:500px;
+  position:relative;
+  margin-left:220px;
+}
+
+.rincian{
+	color:white;
+	margin-top:200px;
+	background:rgb(11 102 35);
+  float: right;
+	width:30%;
+	height:400px;
+	padding-top:5%;
+	padding-right:50px;
+	padding-left:5%;
+	padding-bottom:10px;
+  position:relative;
+  margin-right:100px;
+}
+
+.icon{
+	width:100px;
+	height:100px;
+}
+
+
+
+/* ===================== galery====================*/
+
+h1{
+	margin:10px 0;
+	text-align:center;
+	
+	
+}
+.galery{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+padding:10px;
+}
+
+.galery .gambar{
+	height:150px;
+	width:200px;
+	border: 10px solid #fff;
+	box-shadow:0 5px 15px rgba(0,0,0,-1);
+	overflow:hidden;
+	cursor:pointer;
+	margin:20px;
+}
+
+.galery .gambar img{
+	height:100%;
+	width:100%;
+	object-fit:cover;
+	transition: .2s linear;
+
+}
+
+.galery .popup-image{
+	position:fixed;
+	top:0; left:0;
+	background:rgba(0,0,0,9);
+	height:100%;
+	width:100%;
+	z-index:100;
+
+}
+
+.galery .popup-image span{
+	position:absolute;
+	top:0; right:10px;
+	font-size:40px;
+	font-weight:bolder;
+	color:#fff;
+	cursor:pointer;
+	z-index:100;
+}
+
+.galery .popup-image img{
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%, -50%);
+	border:5px solid #fff;
+	border-radius:5px;
+	width:750px;
+	object-fit:coveer; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.detail{
+    top: 68%;
+    position: absolute;
+    width: 10%;
+    height: 40px;
+    background-color:orangered;
+    left: 45.2%;
+}
+.detail:hover{
+    background-color: rgb(255, 69, 0, 0.3);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/* humberger menu */
+.menu-toggle{
+display: flex;
+flex-direction: column;
+height: 20px;
+justify-content: space-beetwen;
+} 
+
+.menu-toggle span{
+display: block;
+width : 28px;
+height: 3px;
+background-color: #de6581;	
+border-radius: 3px;
+
+}
+
+.arrow{
+	display: none;
+}
+/* on big screens
+@media only screenand (min-width:850px){
+,*/
+
+
+
+
+/*========================================*/
+.sidebar {
+	display: none;
+    position: absolute;
+    background: pink;
+    height: 100vh;
+    width: 100%;
+    transition: all .5s;
+    border-bottom-right-radius: 30%;
+    z-index: 3;
+}
+  
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    
+}
+.sidebar ul li {
+    list-style: none;
+    
+}
+
+.sidebar ul li a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+/*=======================*/
+.arrow{
+    display: none;
+    font-size: 50px;
+    color: white;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 850px) {
+
+.wrap .menu ul{
+	display: none;
+	}
+
+    .text {
+  color: #000000;
+  font-size: 20px;
+  padding: 100px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.text1 {
+  color: yellow;
+  font-size: 30px;
+  padding: 100px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+  .sidebar{
+  display:block;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .arrow {
+    display: block;
+	padding:20px;	
+
+  }
